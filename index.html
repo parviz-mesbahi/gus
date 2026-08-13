@@ -111,6 +111,24 @@
     <button type="button" class="btn btn-primary" onclick="zeigeNachricht()">Klick mich</button>
 </div>
 
+<div class="container m-3" style="max-width: 400px;">
+    <form onsubmit="event.preventDefault(); add();">
+        <div class="mb-3">
+            <label for="wert1" class="form-label">Wert 1</label>
+            <input type="number" class="form-control" id="wert1">
+        </div>
+        <div class="mb-3">
+            <label for="wert2" class="form-label">Wert 2</label>
+            <input type="number" class="form-control" id="wert2">
+        </div>
+        <button type="submit" class="btn btn-primary">Addieren</button>
+        <div class="mb-3 mt-3">
+            <label for="ergebnis" class="form-label">Ergebnis</label>
+            <input type="text" class="form-control" id="ergebnis" readonly>
+        </div>
+    </form>
+</div>
+
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
 <script src="script.js"></script>
 </body>
