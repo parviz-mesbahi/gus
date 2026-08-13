@@ -81,9 +81,9 @@
   // Aufgabe 3: Zahlentabelle
   function tabelleFuellen() {
     for (let i = 1; i <= 10; i++) {
-      const zeile = document.getElementById("zeile-" + i);
-      const zelle = document.createElement("td");
-    <p> TODO </p>
+        const p = document.createElement("p");
+        p.textContent = i;
+        document.body.appendChild(p);
     }
   }
 
