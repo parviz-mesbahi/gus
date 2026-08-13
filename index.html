@@ -49,21 +49,21 @@
     </div>
     <div class="carousel-inner">
         <div class="carousel-item active">
-            <img src="images/bild1.jpg" class="d-block w-100" alt="Folie 1" style="object-fit: cover; height: 400px;">
+            <div class="w-100" style="height: 400px; background-color: #0d6efd;"></div>
             <div class="carousel-caption d-none d-md-block" style="color: #002B5C;">
                 <h5 style="font-size: 4.5rem;">Willkommen</h5>
                 <p style="font-size: 3rem;">Eine einfache Übungsseite für Bootstrap-Komponenten.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="images/bild2.jpg" class="d-block w-100" alt="Folie 2" style="object-fit: cover; height: 400px;">
+            <div class="w-100" style="height: 400px; background-color: #198754;"></div>
             <div class="carousel-caption d-none d-md-block" style="color: #002B5C;">
                 <h5 style="font-size: 2.5rem;">Bootstrap lernen</h5>
                 <p style="font-size: 2rem;">Navbar, Carousel und Cards im praktischen Einsatz.</p>
             </div>
         </div>
         <div class="carousel-item">
-            <img src="images/bild3.jpg" class="d-block w-100" alt="Folie 3" style="object-fit: cover; height: 400px;">
+            <div class="w-100" style="height: 400px; background-color: #dc3545;"></div>
             <div class="carousel-caption d-none d-md-block" style="color: #002B5C;">
                 <h5 style="font-size: 2.5rem;">Responsiv & schnell</h5>
                 <p style="font-size: 2rem;">Alles nur mit Bootstrap-Klassen, ohne eigenes CSS.</p>
@@ -112,7 +112,7 @@
 </div>
 
 <div class="container m-3" style="max-width: 400px;">
-    <form onsubmit="event.preventDefault(); add();">
+    <form onsubmit="event.preventDefault(); berechne();">
         <div class="mb-3">
             <label for="wert1" class="form-label">Wert 1</label>
             <input type="number" class="form-control" id="wert1">
@@ -121,7 +121,16 @@
             <label for="wert2" class="form-label">Wert 2</label>
             <input type="number" class="form-control" id="wert2">
         </div>
-        <button type="submit" class="btn btn-primary">Addieren</button>
+        <div class="mb-3">
+            <label for="operation" class="form-label">Operation</label>
+            <select class="form-select" id="operation">
+                <option value="plus">Plus (+)</option>
+                <option value="minus">Minus (−)</option>
+                <option value="mal">Mal (×)</option>
+                <option value="geteilt">Geteilt (÷)</option>
+            </select>
+        </div>
+        <button type="submit" class="btn btn-primary">Berechnen</button>
         <button type="button" class="btn btn-secondary" onclick="clearForm()">Löschen</button>
         <div class="mb-3 mt-3">
             <label for="ergebnis" class="form-label">Ergebnis</label>
