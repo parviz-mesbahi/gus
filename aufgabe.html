@@ -31,6 +31,35 @@
             </p>
         </div>
     </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Aufgabe 3: Zahlentabelle</h5>
+            <p class="card-text">
+                Schreibe eine JavaScript-Funktion <code>tabelleFuellen()</code>, die mit einer
+                <code>for</code>-Schleife die Zahlen von 1 bis 10 als Zeilen in die Tabelle mit
+                der ID <code>zahlentabelle</code> schreibt.
+            </p>
+            <table id="zahlentabelle" class="table table-bordered">
+                <thead>
+                    <tr><th>Zahl</th></tr>
+                </thead>
+                <tbody>
+                    <tr id="zeile-1"></tr>
+                    <tr id="zeile-2"></tr>
+                    <tr id="zeile-3"></tr>
+                    <tr id="zeile-4"></tr>
+                    <tr id="zeile-5"></tr>
+                    <tr id="zeile-6"></tr>
+                    <tr id="zeile-7"></tr>
+                    <tr id="zeile-8"></tr>
+                    <tr id="zeile-9"></tr>
+                    <tr id="zeile-10"></tr>
+                </tbody>
+            </table>
+            <button type="button" class="btn btn-primary" onclick="tabelleFuellen()">Tabelle füllen</button>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -47,6 +76,15 @@
 
   // Aufgabe 2: Größte Zahl
   function groesseZahl(a, b, c) {
+  }
+
+  // Aufgabe 3: Zahlentabelle
+  function tabelleFuellen() {
+    for (let i = 1; i <= 10; i++) {
+      const zeile = document.getElementById("zeile-" + i);
+      const zelle = document.createElement("td");
+    <p> TODO </p>
+    }
   }
 
 </script>
