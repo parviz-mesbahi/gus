@@ -7,7 +7,7 @@
 body {
     font-family: system-ui, -apple-system, "Segoe UI", Arial, sans-serif;
     background: #f4f8fc;
-    color: #1a2b3c;
+    color: rgba(6, 161, 37, 0.8);
     line-height: 1.6;
 }
 
