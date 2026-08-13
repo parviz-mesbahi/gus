@@ -60,6 +60,18 @@
             <button type="button" class="btn btn-primary" onclick="tabelleFuellen()">Tabelle füllen</button>
         </div>
     </div>
+
+    <div class="card mb-4">
+        <div class="card-body">
+            <h5 class="card-title">Aufgabe 4: Zahlen als Absätze</h5>
+            <p class="card-text">
+                Schreibe eine JavaScript-Funktion <code>zahlenAusgeben()</code>, die mit einer
+                <code>for</code>-Schleife die Zahlen von 1 bis 10 erzeugt und jede Zahl als
+                eigenen <code>&lt;p&gt;</code>-Absatz an das Ende der Seite anhängt.
+            </p>
+            <button type="button" class="btn btn-primary" onclick="zahlenAusgeben()">Absätze ausgeben</button>
+        </div>
+    </div>
 </div>
 
 <script>
@@ -80,6 +92,15 @@
 
   // Aufgabe 3: Zahlentabelle
   function tabelleFuellen() {
+    for (let i = 1; i <= 10; i++) {
+      const zeile = document.getElementById("zeile-" + i);
+      const zelle = document.createElement("td");
+
+    }
+  }
+
+  // Aufgabe 4: Zahlen als Absätze
+  function zahlenAusgeben() {
     for (let i = 1; i <= 10; i++) {
         const p = document.createElement("p");
         p.textContent = i;
